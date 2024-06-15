@@ -7,12 +7,16 @@ def main():
                 Amount_left = Amount_left - int(ask_for_money)
             else:
                  print("Invalid denominations")
+                 continue
+            
             if Amount_left == 0:
+                 break
 
             elif Amount_left < 0: 
-                change_owed 
-                print(f"Change owed {change_owed}")    
+                change_owed = abs(Amount_left)
+                print(f"\nReturn change {change_owed}")
+                break
                 
-            print(f"Change owed {Amount_left}")
+            print(f"Change left {Amount_left}")
 
 main()
