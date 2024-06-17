@@ -54,7 +54,10 @@ def main():
     print(dogs - 1)
 
     #How to use the split method
-    car_data = "Ferrari,f-50,2021,500000,4.8"
+    car_info = "Ferrari,f-50,2021,500000,4.8\n"
+
+    car_data = car_info.split(",")
+    print(car_data)
 
 
    
